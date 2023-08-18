@@ -35,7 +35,7 @@ const DashboardPage = () => {
                         return (
                             <div>
                                 <Link to={`/products/${eachProduct._id}`} key={eachProduct._id} className='card-text d-flex flex-column'>{eachProduct.title}</Link>
-                                <button conClick={() => handleDelete(eachProduct._id)} type="button">Delete</button>
+                                <button onClick={() => handleDelete(eachProduct._id)} type="button">Delete</button>
                             </div>
                         )
                     })}
@@ -46,3 +46,4 @@ const DashboardPage = () => {
 }
 
 export default DashboardPage
+
